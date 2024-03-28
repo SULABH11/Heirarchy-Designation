@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { categories} from '../data'
+import Header from '../pages/Header'
+import Footer from '../pages/Footer'
 
 const Profile = () => {
   const params = useParams(); 
@@ -16,15 +18,16 @@ const Profile = () => {
   },[params?.id])
   return (
 <div>
+<Header />
   <div>
     <section style={{backgroundColor: '#eee'}}>
 
-      <div className="container py-5">
+      <div className="container py-3">
         <div className="row">
           <div className="col">
-            <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
+            <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4 mt-0">
               <ol className="breadcrumb mb-0">
-                <li className="breadcrumb-item active" aria-current="page">User Profile</li>
+                <li className="breadcrumb-item active" aria-current="page" style={{ fontWeight: "bold", color: "black"}}>User Profile</li>
               </ol>
             </nav>
           </div>
@@ -106,6 +109,7 @@ const Profile = () => {
       </div>
     </section>
   </div> 
+  <Footer />
 </div>)
 }
 

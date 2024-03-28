@@ -4,10 +4,18 @@ section.container{
     width: 200px;
     padding: 0px;
 }
+
+.container2{
+    height:300px; 
+    border-radius: 10px;
+    width: 250px;
+    padding: 0px;
+}
+
 .white-box{
     background-color: white;
     width: 180px;   
-    height: 195px !important;
+    height: 180px !important;
     border-radius: 10px;
     padding: 5px !important;
     margin-top: 55px; 
@@ -18,19 +26,21 @@ section.container{
 }
 
 .text p{
-    font-size: 12px; 
+    font-size: 18px; 
     margin-bottom: 5px;
     margin-left: 0px;
     font-weight: 500;
 }
 .text .card-contect p{
-    font-size: 10px;  
-    font-weight: 400;
+    font-size: 13px;  
+    font-weight: bold;
     margin: 0;
+    height: 30px;
 }
 
 .text h6{
-    font-size: 10px; 
+    font-size: 10px;
+    font-weight: bold; 
     margin: 0px; 
 }
 
@@ -52,7 +62,8 @@ section.container{
 } 
 .img img{
     border-radius: 50% !important; 
-    border: 3px solid #9de2ff; 
+    border: 3px solid #d4042e; 
+    /* color: */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.256)
 }
 
