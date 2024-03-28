@@ -3,17 +3,18 @@ import { Tree, TreeNode } from 'react-organizational-chart';
 import styled from 'styled-components';
 import { categories } from './../data';
 import Basic from './CategoryList';
+import "../styles/card.css"
 
 const StyledNode = styled.div`
-  padding: 5px;
-  border-radius: 8px;
+  padding: 0px;
+  border-radius: 10px;
   display: inline-block;
-  border: 1px solid red;
+  border: 1px solid black;
 `;
 
 const StyledTree = () => (
   <Tree
-    lineWidth={'2px'}
+    lineWidth={'1.5px'}
     lineColor={'green'}
     lineBorderRadius={'10px'}
     label={<StyledNode><Basic item = {categories[0]} /></StyledNode>}
