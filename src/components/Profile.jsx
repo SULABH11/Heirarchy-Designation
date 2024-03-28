@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { categories} from '../data'
 
-const Profile = ({item}) => {
+const Profile = () => {
+  const params = useParams(); 
+  const navigate = useNavigate();
+  const [item, setItem] = useState({});
+
+  useEffect(()=>{
+    if(params?.id){
+      const data = categories.find(categories => categories.id == params.id)
+      setItem(data)
+    }
+  },[params?.id])
   return (
 <div>
   <div>
@@ -22,13 +35,9 @@ const Profile = ({item}) => {
             <div className="card mb-4">
               <div className="card-body text-center">
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" className="rounded-circle img-fluid" style={{width: 150}} />
-                <h5 className="my-3">{item.firstName}</h5>
-                <p className="text-muted mb-1">Full Stack Developer</p>
-                <p className="text-muted mb-4">Bay Area, San Francisco, CA</p>
-                <div className="d-flex justify-content-center mb-2">
-                  <button type="button" className="btn btn-primary">Follow</button>
-                  <button type="button" className="btn btn-outline-primary ms-1">Message</button>
-                </div>
+                <h5 className="my-3">{item.firstName}  </h5>
+                <h2 className="my-3">{item.designation}</h2>
+                <p className="mb-4">{item.email}</p>
               </div>
             </div>
             
@@ -41,7 +50,7 @@ const Profile = ({item}) => {
                     <p className="mb-0">Full Name</p>
                   </div>
                   <div className="col-sm-9">
-                    <p className="text-muted mb-0">Johnatan Smith</p>
+                    <p className="text-muted mb-0">{item.firstName} {item.lastName} </p>
                   </div>
                 </div>
                 <hr />
@@ -50,7 +59,7 @@ const Profile = ({item}) => {
                     <p className="mb-0">Email</p>
                   </div>
                   <div className="col-sm-9">
-                    <p className="text-muted mb-0">example@example.com</p>
+                    <p className="text-muted mb-0">{item.email}</p>
                   </div>
                 </div>
                 <hr />
@@ -59,16 +68,25 @@ const Profile = ({item}) => {
                     <p className="mb-0">Phone</p>
                   </div>
                   <div className="col-sm-9">
-                    <p className="text-muted mb-0">(097) 234-5678</p>
+                    <p className="text-muted mb-0">{item.contactNumber}</p>
                   </div>
                 </div>
                 <hr />
                 <div className="row">
                   <div className="col-sm-3">
-                    <p className="mb-0">Mobile</p>
+                    <p className="mb-0">Age</p>
                   </div>
                   <div className="col-sm-9">
-                    <p className="text-muted mb-0">(098) 765-4321</p>
+                    <p className="text-muted mb-0">{item.age}</p>
+                  </div>
+                </div>
+                <hr />
+                <div className="row">
+                  <div className="col-sm-3">
+                    <p className="mb-0">DOB</p>
+                  </div>
+                  <div className="col-sm-9">
+                    <p className="text-muted mb-0">{item.dob}</p>
                   </div>
                 </div>
                 <hr />
@@ -77,7 +95,7 @@ const Profile = ({item}) => {
                     <p className="mb-0">Address</p>
                   </div>
                   <div className="col-sm-9">
-                    <p className="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                    <p className="text-muted mb-0">{item.address}</p>
                   </div>
                 </div>
               </div>

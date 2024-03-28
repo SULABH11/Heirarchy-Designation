@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import Profile from './Profile';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Basic({item}) {
-  const [count, setCount] = useState({});
-
-  // Similar to componentDidMount and componentDidUpdate:
-  useEffect(() => {
-    <Profile item = {count}/>
-  }, [count, item]);
+  const navigate = useNavigate();
 
   return (
  <section className="container col-md-5 mt-5" style={{backgroundColor: '#9de2ff'}}>
@@ -18,7 +13,7 @@ export default function Basic({item}) {
           <div className="card-body p-4">
             <div className="d-flex text-black">
               <div className="flex-shrink-0">
-                <img src="http://source.unsplash.com/120x120/?boobs" alt="Profile" className="img-fluid" style={{width: 180, borderRadius: 10}} />
+                <img src="http://source.unsplash.com/120x120/?girl" alt="Profile" className="img-fluid" style={{width: 180, borderRadius: 10}} />
               </div>
               <div className="flex-grow-1 ms-3">
                 <h5 className="mb-1">{item.firstName} {item.lastName}</h5>
@@ -27,7 +22,7 @@ export default function Basic({item}) {
                 <h6 className="mb-2 pb-1" style={{color: '#2b2a2a'}}>{item.email}</h6>
                 
                 <div className="d-flex pt-1">
-                  <button type="button" className="btn btn-primary flex-grow-1" onClick={() => setCount({item})}>More Details</button>
+                  <button type="button" className="btn btn-primary flex-grow-1" onClick={() => navigate(`/profile/${item.id}`)} >More Details</button>
                 </div>
               </div>
             </div>

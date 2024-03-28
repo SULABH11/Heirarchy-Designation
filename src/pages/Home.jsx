@@ -1,9 +1,9 @@
 import React from 'react'
-import Category from '../components/Category'
+import StyledTree from './../components/StyledTree';
 
 const Home = () => {
   return ( 
-    <div><Category /></div>
+    <div><StyledTree /></div>
   )
 }
 
