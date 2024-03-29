@@ -7,7 +7,7 @@ const Footer = () => {
     {/* Grid container */}
     <div className="container pb-0">
       {/* Section: Social media */}
-      <section className="mb-4 p-1">
+      <section className="mb-4 p-2">
         {/* Google */}
         <a data-mdb-ripple-init className="btn text-white btn-floating m-1" style={{backgroundColor: '#dd4b39'}} href="https://www.sprih.com/" role="button"><i className="fab fa-google" /></a>
         {/* Instagram */}

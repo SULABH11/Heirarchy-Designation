@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { useEffect } from 'react';
 export default function Basic({item}) {
   const navigate = useNavigate();
-
+  // useEffect(()=>{
+  //   console.log(item.imageUrl);
+  // },[])
   return (
   <section className="container d-flex justify-content-center align-items-center" style={{backgroundColor: '#d8bfd8'}} >
   <div className="container py-3 h-100 white-box d-flex justify-content-center align-items-center position-relative">  
