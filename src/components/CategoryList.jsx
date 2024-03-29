@@ -9,7 +9,7 @@ export default function Basic({item}) {
   <div className="container py-3 h-100 white-box d-flex justify-content-center align-items-center position-relative">  
   
     <div className="w-100 d-flex justify-content-center align-items-center img">
-          <img src="http://source.unsplash.com/120x120/?girl" alt="Profile" className="img-fluid" style={{width: 110}} />
+          <img src={item.imageUrl} alt="Profile" className="img-fluid" style={{width: 110}} />
         </div>
         <div className="text w-100">
           <h5 className="" style={{fontWeight: "bold"}}>{item.firstName} {item.lastName}</h5>

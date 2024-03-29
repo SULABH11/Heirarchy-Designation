@@ -37,7 +37,7 @@ const Profile = () => {
           <div className="col-lg-4">
             <div className="card mb-4">
               <div className="card-body text-center">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" className="rounded-circle img-fluid" style={{width: 150}} />
+                <img src={item.imageUrl} alt="avatar" className="rounded-circle img-fluid" style={{width: 150}} />
                 <h5 className="my-3">{item.firstName}  </h5>
                 <h2 className="my-3">{item.designation}</h2>
                 <p className="mb-4">{item.email}</p>

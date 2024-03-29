@@ -1,7 +1,7 @@
 export const categories = [
     {
       "id": 1001,
-      "imageUrl": "http://source.unsplash.com/120x120/?girl",
+      "imageUrl": "../public/images/MK image.png",
       // "imageUrl": "https://hub.dummyapis.com/Image?text=MK&height=120&width=120",
       "firstName": "Marlen",
       "lastName": "Kutch",
@@ -14,7 +14,7 @@ export const categories = [
     },
     {
       "id": 1002,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=BP&height=120&width=120",
+      "imageUrl": "../public/images/BP image.png",
       "firstName": "Barton",
       "lastName": "Prosacco",
       "email": "Barton.Prosacco@dummyapis.com",
@@ -27,7 +27,7 @@ export const categories = [
     },
     {
       "id": 1003,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=VR&height=120&width=120",
+      "imageUrl": "../public/images/VR image.png",
       "firstName": "Viola",
       "lastName": "Reynolds",
       "email": "Viola.Reynolds@dummyapis.com",
@@ -40,7 +40,7 @@ export const categories = [
     },
     {
       "id": 1004,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=PK&height=120&width=120",
+      "imageUrl": "../public/images/PK image.png",
       "firstName": "Pink",
       "lastName": "Keeling",
       "email": "Pink.Keeling@dummyapis.com",
@@ -53,7 +53,7 @@ export const categories = [
     },
     {
       "id": 1005,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=WD&height=120&width=120",
+      "imageUrl": "../public/images/WD image.png",
       "firstName": "Will",
       "lastName": "Daniel",
       "email": "Will.Daniel@dummyapis.com",
@@ -66,7 +66,7 @@ export const categories = [
     },
     {
       "id": 1006,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=NW&height=120&width=120",
+      "imageUrl": "../public/images/NW imge.png",
       "firstName": "Nola",
       "lastName": "Willms",
       "email": "Nola.Willms@dummyapis.com",
@@ -79,7 +79,7 @@ export const categories = [
     },
     {
       "id": 1007,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=DA&height=120&width=120",
+      "imageUrl": "../public/images/DA image.png",
       "firstName": "Destiny",
       "lastName": "Ankunding",
       "email": "Destiny.Ankunding@dummyapis.com",
@@ -92,7 +92,7 @@ export const categories = [
     },
     {
       "id": 1008,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=JM&height=120&width=120",
+      "imageUrl": "../public/images/JM image.png",
       "firstName": "Jenny",
       "lastName": "McDermott",
       "email": "Jenny.McDermott@dummyapis.com",
@@ -105,7 +105,7 @@ export const categories = [
     },
     {
       "id": 1009,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=PM&height=120&width=120",
+      "imageUrl": "../public/images/PM image.png",
       "firstName": "Phyllis",
       "lastName": "McGlynn",
       "email": "Phyllis.McGlynn@dummyapis.com",
@@ -118,7 +118,7 @@ export const categories = [
     },
     {
       "id": 1010,
-      "imageUrl": "https://hub.dummyapis.com/Image?text=GA&height=120&width=120",
+      "imageUrl": "../public/images/GA image.png",
       "firstName": "Gregory",
       "lastName": "Aufderhar",
       "email": "Gregory.Aufderhar@dummyapis.com",
